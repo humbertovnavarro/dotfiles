@@ -6,6 +6,7 @@ cd /tmp
 git clone https://aur.archlinux.org/yay.git
 cd /tmp/yay
 makepkg si
+rm -rf /tmp/yay
 
 echo "installing packages"
 yay -S - < packages.txt
@@ -28,3 +29,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 echo "setting up ohmyzsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo "setting up astro nvim"
+git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+nvim +PackerSync
