@@ -3,3 +3,4 @@
 !.config/waybar/
 !.config/rofi/
 !install-deps.bash
+!dotfiles.code-workspace

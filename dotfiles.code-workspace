@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".config/sway"
+		},
+		{
+			"path": ".config/rofi"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
