@@ -29,3 +29,4 @@ bluetuith
 dolphin
 openssh
 wl-clipboard
+protonup-qt
