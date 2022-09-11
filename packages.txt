@@ -19,3 +19,4 @@ polymc-bin
 vscodium-bin
 lutris
 btop
+neofetch
