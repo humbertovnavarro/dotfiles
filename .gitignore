@@ -1,3 +1,5 @@
 *
-!.config/sway
-!.config/waybar
+!.config/sway/
+!.config/waybar/
+!.config/rofi/
+!install-deps.bash
