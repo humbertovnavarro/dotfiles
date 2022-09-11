@@ -17,3 +17,4 @@ chromium
 discord
 polymc-bin
 vscodium-bin
+lutris
