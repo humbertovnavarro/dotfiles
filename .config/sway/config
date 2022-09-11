@@ -101,4 +101,6 @@ output DP-1 mode 1920x1080@165Hz pos 1920 0
 font pango:Cantarell 12px
 include /etc/sway/config.d/*
 # Style
-gaps inner 1
+gaps inner 2
+
+xwayland enable

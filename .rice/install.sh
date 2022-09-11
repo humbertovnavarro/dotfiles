@@ -5,7 +5,7 @@ sudo pacman -S git base-devel
 cd /tmp
 git clone https://aur.archlinux.org/yay.git
 cd /tmp/yay
-makepkg si
+makepkg -si
 rm -rf /tmp/yay
 
 echo "setting up dotfile repo"
@@ -17,6 +17,7 @@ git pull origin main
 cd ~/.rice
 
 echo "setting up automatic login, I hope you're using encryption :)"
+sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
 cat autologin.conf | sudo tee /etc/systemd/system/getty@tty1.service.d/autologin.conf
 
 echo "setting up doas"
@@ -38,5 +39,3 @@ echo "setting up astro nvim"
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 
 sudo systemctl enable bluetooth
-echo "restarting"
-sudo reboot
