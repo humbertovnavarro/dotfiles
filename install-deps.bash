@@ -11,6 +11,7 @@ zsh \
 rofi \
 neovim \
 mako \
+git-lfs \
 cd ~
 git init
 git remote add origin https://github.com/humbertovnavarro/dotfiles.git
