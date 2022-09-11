@@ -36,3 +36,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 echo "setting up astro nvim"
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+
+sudo systemctl enable bluetooth
+echo "restarting"
+sudo reboot

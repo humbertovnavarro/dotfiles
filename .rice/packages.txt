@@ -17,7 +17,6 @@ waybar
 neovim
 steam
 firefox
-chromium
 discord
 polymc-bin
 vscodium-bin
@@ -27,3 +26,7 @@ neofetch
 vlc
 rythmbox
 godot
+pavucontrol
+bluez
+bluez-utils
+bluetuith
