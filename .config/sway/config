@@ -99,8 +99,9 @@ bar swaybar_command waybar
 # Kamaii's monitor setup
 output HDMI-A-1 mode 1920x1080@75Hz pos 0 0
 output DP-1 mode 1920x1080@165Hz pos 1920 0
+font pango:Cantarell 14px
 
-client.focused #660000 #660000 #ffffff #660000
-
-font pango:SourceCodePro Medium 11
 include /etc/sway/config.d/*
+
+# Style
+gaps inner 1

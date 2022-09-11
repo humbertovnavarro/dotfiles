@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"path": ".config/waybar"
 		}
 	],
 	"settings": {}

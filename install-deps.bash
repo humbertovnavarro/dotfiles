@@ -4,7 +4,8 @@ sway \
 waybar \
 base-devel \
 git \
-adobe-source-code-pro-fonts \
+cantarell-fonts \
+ttf-font-awesome \
 doas \
 zsh \
 rofi \
