@@ -1,7 +1,10 @@
+base
+linux
+linux-firmware
+base-devel
 sway
 waybar
 git
-base-devel
 cantarell-fonts
 ttf-font-awesome
 doas
