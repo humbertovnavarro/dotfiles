@@ -3,11 +3,15 @@ set $left h
 set $down j
 set $up k
 set $right l
+set $bluetooth alacritty -e /usr/bin/bluetuith
+set $audio pavucontrol
 set $term alacritty
 set $menu rofi -show run | xargs swaymsg exec --
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
 ### Key bindings
+    bindsym $mod+Shift+b exec $bluetooth
+    bindsym $mod+Shift+a exec $audio
     bindsym $mod+Return exec $term
     bindsym $mod+Shift+q kill
     bindsym $mod+d exec $menu

@@ -30,3 +30,4 @@ dolphin
 openssh
 wl-clipboard
 protonup-qt
+nerd-fonts-hack
