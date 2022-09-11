@@ -21,3 +21,6 @@ vscodium-bin
 lutris
 btop
 neofetch
+vlc
+rythmbox
+godot

@@ -8,21 +8,22 @@ cd /tmp/yay
 makepkg si
 rm -rf /tmp/yay
 
-echo "installing packages"
-yay -S - < packages.txt
-
-echo "setting up automatic login, I hope you're using encryption :)"
-cat ~/.rice/autologin.conf | sudo tee /etc/systemd/system/getty@tty1.service.d/autologin.conf
-
-echo "setting up doas"
-echo "permit :wheel" | sudo tee /etc/doas.conf
-
-
 echo "setting up dotfile repo"
 cd ~
 git init
 git remote add origin https://github.com/humbertovnavarro/dotfiles.git
 git pull origin main
+
+cd ~/.rice
+
+echo "setting up automatic login, I hope you're using encryption :)"
+cat autologin.conf | sudo tee /etc/systemd/system/getty@tty1.service.d/autologin.conf
+
+echo "setting up doas"
+echo "permit :wheel" | sudo tee /etc/doas.conf
+
+echo "installing packages"
+yay -S - < packages.txt
 
 echo "setting up rust"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
