@@ -11,6 +11,9 @@
 		},
 		{
 			"path": ".config/waybar"
+		},
+		{
+			"path": ".oh-my-zsh"
 		}
 	],
 	"settings": {}
