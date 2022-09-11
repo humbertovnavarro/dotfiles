@@ -1,5 +1,5 @@
 #!/bin/bash
-pacman -S \
+sudo pacman -S \
 sway \
 waybar \
 base-devel \
@@ -9,8 +9,10 @@ ttf-font-awesome \
 doas \
 zsh \
 rofi \
-gnome-control-center \
-gnome-tweaks \
 neovim \
 mako \
-echo "permit :wheel" >> /etc/doas.conf
+cd ~
+git init
+git remote add origin https://github.com/humbertovnavarro/dotfiles.git
+git pull origin main
+echo "permit :wheel" | sudo tee /etc/doas.conf
