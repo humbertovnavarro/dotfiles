@@ -23,18 +23,15 @@
         "sway/mode"
     ],
     "modules-center": [
-        "sway/window"
-    ],
-    "modules-right": [
-        "network",
-        "memory",
-        "cpu",
-        "temperature",
-        "custom/keyboard-layout",
-        "battery",
-        "tray",
+        "sway/window",
         "clock#date",
         "clock#time"
+    ],
+    "modules-right": [
+        "memory",
+        "cpu",
+        "tray",
+        "pulseaudio"
     ],
 
 
@@ -136,22 +133,22 @@
         }
     },
 
-    //"pulseaudio": {
-    //    //"scroll-step": 1,
-    //    "format": "{icon}  {volume}%",
-    //    "format-bluetooth": "{icon}  {volume}%",
-    //    "format-muted": "",
-    //    "format-icons": {
-    //        "headphones": "",
-    //        "handsfree": "",
-    //        "headset": "",
-    //        "phone": "",
-    //        "portable": "",
-    //        "car": "",
-    //        "default": ["", ""]
-    //    },
-    //    "on-click": "pavucontrol"
-    //},
+    "pulseaudio": {
+       "scroll-step": 2,
+       "format": "{icon}  {volume}%",
+       "format-bluetooth": "{icon}  {volume}%",
+       "format-muted": "",
+       "format-icons": {
+           "headphones": "",
+           "handsfree": "",
+           "headset": "",
+           "phone": "",
+           "portable": "",
+           "car": "",
+           "default": ["", ""]
+       },
+       "on-click": "pavucontrol"
+    },
 
     "temperature": {
       "critical-threshold": 80,
