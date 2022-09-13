@@ -2,5 +2,6 @@ configuration {
     modi: "drun";
     combi-modi: "drun";
     show-icons: true;
+    font: "Source Code Pro 10";
 }
-@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+@theme "/usr/share/rofi/themes/Monokai.rasi"
