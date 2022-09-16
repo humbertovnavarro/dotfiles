@@ -18,6 +18,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     floating_modifier $mod normal
     bindsym $mod+Shift+c reload
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
 # Moving around:
     # Move your focus around
     bindsym $mod+$left focus left
@@ -40,6 +41,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+
 # Workspaces:
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
@@ -61,6 +63,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     bindsym $mod+Shift+8 move container to workspace number 8
     bindsym $mod+Shift+9 move container to workspace number 9
     bindsym $mod+Shift+0 move container to workspace number 10
+
 # Layout stuff:
     bindsym $mod+b splith
     bindsym $mod+v splitv
@@ -76,9 +79,11 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     bindsym $mod+space focus mode_toggle
     # Move focus to the parent container
     bindsym $mod+a focus parent
+
 # Scratchpad:
     bindsym $mod+Shift+minus move scratchpad
     bindsym $mod+minus scratchpad show
+
 # Resizing containers:
 mode "resize" {
     bindsym $left resize shrink width 10px
@@ -95,11 +100,13 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
 # Status Bar:
 # Read `man 5 sway-bar` for more information about this section.
 bar swaybar_command waybar
+
 # Display configuration
-    # Kamaii's monitor setup
+output * adaptive_sync on
 output HDMI-A-1 mode 1920x1080@75Hz pos 0 0
 output DP-1 mode 1920x1080@165Hz pos 1920 0
 
