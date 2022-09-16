@@ -4,17 +4,18 @@
     "height": 24,
     "modules-left": [
         "sway/workspaces",
-        "sway/mode",
-        "tray"
+        "sway/mode"
     ],
     "modules-center": [
         "sway/window"
     ],
     "modules-right": [
-        "sway/mode", 
+        "tray",
+        "sway/mode",
         "memory",
         "cpu",
         "pulseaudio",
+        "bluetooth",
         "clock#date",
         "clock#time"
     ],
@@ -120,11 +121,11 @@
       "interval": 5,
       "format": "{icon}  {temperatureC}°C",
       "format-icons": [
-          "", // Icon: temperature-empty
-          "", // Icon: temperature-quarter
-          "", // Icon: temperature-half
-          "", // Icon: temperature-three-quarters
-          ""  // Icon: temperature-full
+          "",
+          "",
+          "",
+          "",
+          ""
       ],
       "tooltip": true
     },
